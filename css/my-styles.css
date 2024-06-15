@@ -32,7 +32,7 @@ header {
 }
 
 .topnav a:hover {
-  background-color: #FFD000; /* Change hover background color to specified yellow */
+  background-color: #FFD000; /* Changed my hover background color to specefied yellow */
   color: black;
 }
 
@@ -42,6 +42,7 @@ header {
 }
 
 /* Welcome Section */
+
 .welcome-section {
   padding: 100px 20px;
   text-align: center;
@@ -237,13 +238,14 @@ footer {
 }
 
 /* About Section */
+
 .about-section {
-  background-color: #FFD000; /* Change to your style guide's background color */
+  background-color: #FFD000; /* My style guide's background color */
   padding: 20px;
   border-radius: 8px;
   max-width: 800px;
   margin: 0 auto;
-  color: #333333; /* Change to your style guide's text color */
+  color: #333333; /* My style guide's text color */
   font-family: 'Araboto Regular', Arial, sans-serif;
   line-height: 1.6;
 }
@@ -251,7 +253,7 @@ footer {
 .about-section h2 {
   text-align: center;
   font-size: 2em;
-  color: #333333; /* Change to your style guide's heading color */
+  color: #333333; /* My style guide's heading color */
   margin-bottom: 20px;
 }
 
@@ -301,23 +303,23 @@ footer {
   font-family: 'Araboto Medium', Arial, sans-serif;
   color: #333333; /* Dark Gray */
   font-size: 24px; /* Adjust this value to change the size of the member name */
-  margin-bottom: 10px; /* Add margin to separate from title */
+  margin-bottom: 10px; /* margin to separate from title */
 }
 
 .card .container .title {
   font-family: 'Araboto Medium', Arial, sans-serif;
-  color: #FFD000; /* Yellow */
-  font-size: 20px; /* Adjust this value to change the size of the role title */
+  color: #FFD000; /* My style guide yellow */
+  font-size: 20px; /* If I adjust this value, it changes the size of the role title */
 }
 
 .card .container .description {
-  font-size: 16px; /* Adjust this value to change the size of the description text */
+  font-size: 16px; /* If I adjust this value, it changes the size of the description text */
   color: #333333; /* Dark Gray */
 }
 
 .card .container .email {
-  font-size: 14px; /* Adjust this value to change the size of the email text */
-  color: #333333; /* Dark Gray */
+  font-size: 14px; /* If I adjust this value, it changes the size of the email text */
+  color: #333333; /* Dark Gray from my style guide */
 }
 
 .button {
@@ -342,6 +344,7 @@ footer {
 
 
 /* Blog Page Styles */
+
 .header {
   padding: 50px;
   text-align: center;
@@ -356,7 +359,7 @@ footer {
   text-align: center;
 }
 
-/* Set color of all h2 elements within the left column cards to dark gray */
+/* Set color of all h2 elements within the left column cards to my specified dark gray */
 .leftcolumn .card h2 {
   color: #333333; /* Dark Gray */
 }
@@ -366,7 +369,7 @@ footer {
   font-family: 'Araboto Regular', Arial, sans-serif;
   font-size: 18px; /* Adjust this value as needed */
   color: #808080; /* Medium Gray */
-  margin-bottom: 10px; /* Optional: Add margin to separate from other elements */
+  margin-bottom: 10px; /* Might need this to separate from other elements */
 }
 
 /* Target only the first p elements within .leftcolumn .card */
@@ -374,7 +377,7 @@ footer {
   font-family: 'Araboto Regular', Arial, sans-serif;
   font-size: 15px; /* Adjust this value as needed */
   color: #333333; /* Dark Gray */
-  margin-bottom: 10px; /* Optional: Add margin to separate from other elements */
+  margin-bottom: 10px; /* Add margin to separate from other elements */
 }
 
 .archive-section {
@@ -390,7 +393,7 @@ footer {
 }
 
 .archive-section p {
-  font-size: 16px; /* Adjust the size as needed */
+  font-size: 16px; /* Adjust this size as needed */
 }
 
 .search-panel {
@@ -451,7 +454,7 @@ footer {
 
 
 .fakeimg {
-  background-color: transparent; /* Remove the background color */
+  background-color: transparent; /* Removes the background color */
   width: 100%;
   height: auto; /* Allow height to adjust based on the image */
   overflow: hidden; /* Hide any overflow */
@@ -460,7 +463,7 @@ footer {
 .fakeimg img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensure the image covers the entire container */
+  object-fit: cover; /* Ensures the image covers the entire container */
 }
 
 .footer {
@@ -475,17 +478,17 @@ footer {
   font-size: 15px; /* Adjust this value to make the text larger */
   font-family: 'Araboto Regular', Arial, sans-serif;
   color: white; /* Ensure the text color is readable against the background */
-  background-color: #333333; /* Optional: Add background color to match the footer */
-  padding: 20px; /* Optional: Add padding for better spacing */
-  text-align: center; /* Optional: Center align the text */
-  margin: 0; /* Remove default margins */
+  background-color: #333333; /* Adds background color to match the footer */
+  padding: 20px; /* adds padding for better spacing */
+  text-align: center; /* Center align the text */
+  margin: 0; /* Removes default margins */
 }
 
 
 .contact-headline {
   font-family: 'Araboto Black', Arial, sans-serif;
   font-size: 42px; /* Increased font size */
-  color: #FFD000; /* Yellow color */
+  color: #FFD000; /* My style guide yellow color */
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slight drop shadow */
 }
@@ -513,47 +516,47 @@ footer {
 
 /* Adjust font size for paragraph text in the resume page */
 .resume .card p {
-  font-size: 14px; /* Adjust as needed */
+  font-size: 14px; 
 }
 
 /* Adjust font size for the skills section */
 .skills p {
-  font-size: 17px; /* Adjust as needed */
+  font-size: 17px; 
 }
 
 .skills .progress-bar {
   height: 20px; /* Adjust bar height if needed */
-  line-height: 20px; /* Ensure text inside is vertically centered */
+  line-height: 20px; /* Ensures text inside is vertically centered */
   font-size: 14px; /* Adjust as needed */
 }
 
 /* Adjust font size for the languages section */
 .languages p {
-  font-size: 16px; /* Adjust as needed */
+  font-size: 16px; 
 }
 
 .languages .progress-bar {
   height: 20px; /* Adjust bar height if needed */
-  line-height: 20px; /* Ensure text inside is vertically centered */
-  font-size: 14px; /* Adjust as needed */
+  line-height: 20px; /* Ensures text inside is vertically centered */
+  font-size: 14px; 
 }
 
 /* Adjust font size for the education section */
 .education-section h2 {
-  font-size: 24px; /* Adjust as needed */
+  font-size: 24px; 
 }
 
 .education-section h5 {
-  font-size: 16px; /* Adjust as needed */
+  font-size: 16px; 
 }
 
 .education-section p {
-  font-size: 14px; /* Adjust as needed */
+  font-size: 14px; 
 }
 
 /* Adjust font size for footer text */
 .footer p {
-  font-size: 16px; /* Adjust as needed */
+  font-size: 16px; 
 }
 
 /* Change all progress bar colors from green to yellow */
@@ -568,7 +571,7 @@ footer {
 
 .current {
   background-color: #FFD000 !important; /* Yellow color for the "Current" rectangle */
-  color: white !important; /* Ensure text inside is readable */
+  color: white !important; /* This makes sure text inside is readable */
 }
 
 /* Additional styles for Education section */
@@ -590,7 +593,7 @@ footer {
 
 /* Override W3.CSS progress bar colors */
 .w3-teal {
-  background-color: #FFD000 !important; /* Yellow color from your style guide */
+  background-color: #FFD000 !important; /* Yellow color from my style guide */
 }
 
 /* Override W3.CSS dates and "Current" badge to yellow */
@@ -600,7 +603,7 @@ footer {
 
 .current {
   background-color: #FFD000 !important; /* Yellow background for "current" badge */
-  color: white !important; /* Ensure text inside "current" badge is readable */
+  color: white !important; /* Ensures text inside "current" badge is readable */
 }
 
 /* Ensure icons in skills and languages section are yellow */
@@ -631,12 +634,12 @@ footer {
 
 .current {
   background-color: #FFD000 !important; /* Yellow background for "current" badge */
-  color: white !important; /* Ensure text inside "current" badge is readable */
+  color: white !important; /* Ensures text inside "current" badge is readable */
 }
 
 /* Ensure icons in skills and languages section are yellow */
 .skills .fa, .languages .fa {
-  color: #FFD000 !important; /* Yellow color from your style guide */
+  color: #FFD000 !important; /* Yellow color from my style guide */
 }
 
 /* Education section styles */
