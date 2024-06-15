@@ -1,0 +1,646 @@
+/* General Styles */
+* {
+  font-family: 'Araboto Regular', Arial, sans-serif;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+  background-color: #333333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation Styles */
+.topnav {
+  overflow: hidden;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav a {
+  float: none; /* Disable the float */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FFD000; /* Change hover background color to specified yellow */
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #333333; /* Match the background color */
+  color: white;
+}
+
+/* Welcome Section */
+.welcome-section {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #D3D3D3;
+}
+
+.welcome-section img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.welcome-section h1 {
+  font-family: 'Araboto Black', Arial, sans-serif;
+  font-size: 50px;
+  color: #333333;
+  margin: 20px 0 10px 0;
+}
+
+.welcome-section p {
+  font-family: 'Araboto Regular', Arial, sans-serif;
+  font-size: 20px;
+  color: #333333;
+  background-color: #FFD000; /* Add yellow background color */
+  display: inline-block; /* Fit the background color to the text width */
+  padding: 5px; /* Add some padding for better appearance */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Full-width images */
+.mySlides img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1, .my-work-heading {
+  font-family: 'Araboto Black', Arial, sans-serif;
+  font-size: 50px;
+  color: #333333;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Araboto Medium', Arial, sans-serif;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+p {
+  font-family: 'Araboto Regular', Arial, sans-serif;
+  font-size: 11px;
+  color: #000000;
+}
+
+body {
+  background-color: #D3D3D3;
+}
+
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 16px;
+}
+
+/* About Section */
+.about-section {
+  background-color: #FFD000; /* Change to your style guide's background color */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333333; /* Change to your style guide's text color */
+  font-family: 'Araboto Regular', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #333333; /* Change to your style guide's heading color */
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+
+
+/* Team Section */
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 16px;
+}
+
+.card .container .member-name {
+  font-family: 'Araboto Medium', Arial, sans-serif;
+  color: #333333; /* Dark Gray */
+  font-size: 24px; /* Adjust this value to change the size of the member name */
+  margin-bottom: 10px; /* Add margin to separate from title */
+}
+
+.card .container .title {
+  font-family: 'Araboto Medium', Arial, sans-serif;
+  color: #FFD000; /* Yellow */
+  font-size: 20px; /* Adjust this value to change the size of the role title */
+}
+
+.card .container .description {
+  font-size: 16px; /* Adjust this value to change the size of the description text */
+  color: #333333; /* Dark Gray */
+}
+
+.card .container .email {
+  font-size: 14px; /* Adjust this value to change the size of the email text */
+  color: #333333; /* Dark Gray */
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+  background-color: #333333;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #FFD000; /* Add yellow background color */
+}
+
+
+
+
+
+/* Blog Page Styles */
+.header {
+  padding: 50px;
+  text-align: center;
+  background: #FFD000;
+  color: #333333;
+}
+
+.header h2 {
+  font-family: 'Araboto Black', Arial, sans-serif;
+  font-size: 50px;
+  color: #333333;  
+  text-align: center;
+}
+
+/* Set color of all h2 elements within the left column cards to dark gray */
+.leftcolumn .card h2 {
+  color: #333333; /* Dark Gray */
+}
+
+/* Target only the h5 elements within .leftcolumn .card */
+.leftcolumn .card h5 {
+  font-family: 'Araboto Regular', Arial, sans-serif;
+  font-size: 18px; /* Adjust this value as needed */
+  color: #808080; /* Medium Gray */
+  margin-bottom: 10px; /* Optional: Add margin to separate from other elements */
+}
+
+/* Target only the first p elements within .leftcolumn .card */
+.leftcolumn .card p:first-of-type {
+  font-family: 'Araboto Regular', Arial, sans-serif;
+  font-size: 15px; /* Adjust this value as needed */
+  color: #333333; /* Dark Gray */
+  margin-bottom: 10px; /* Optional: Add margin to separate from other elements */
+}
+
+.archive-section {
+  text-align: center;
+}
+
+.archive-section h2 {
+  font-family: 'Araboto Black', Arial, sans-serif;
+  font-size: 30px;
+  color: #333333;
+  text-align: center;
+  background-color: transparent;
+}
+
+.archive-section p {
+  font-size: 16px; /* Adjust the size as needed */
+}
+
+.search-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-panel input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+.search-panel button[type="submit"],
+.search-panel button[type="button"] {
+  background-color: #FFD000;
+  border: none;
+  color: #333333;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+.search-panel button[type="submit"]:hover,
+.search-panel button[type="button"]:hover {
+  background-color: #333333;
+  color: #FFD000;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+
+.leftcolumn {
+  flex: 70%;
+  padding: 0 16px;
+}
+
+.rightcolumn {
+  flex: 30%;
+  padding: 0 16px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.fakeimg {
+  background-color: transparent; /* Remove the background color */
+  width: 100%;
+  height: auto; /* Allow height to adjust based on the image */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.fakeimg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333333;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: 15px; /* Adjust this value to make the text larger */
+  font-family: 'Araboto Regular', Arial, sans-serif;
+  color: white; /* Ensure the text color is readable against the background */
+  background-color: #333333; /* Optional: Add background color to match the footer */
+  padding: 20px; /* Optional: Add padding for better spacing */
+  text-align: center; /* Optional: Center align the text */
+  margin: 0; /* Remove default margins */
+}
+
+
+.contact-headline {
+  font-family: 'Araboto Black', Arial, sans-serif;
+  font-size: 42px; /* Increased font size */
+  color: #FFD000; /* Yellow color */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slight drop shadow */
+}
+
+
+/* Resume Page Styles */
+
+/* Change all Font Awesome icons from green to yellow */
+.fa, .fas, .fa-calendar, .fa-phone, .fa-envelope, .fa-map-marker-alt {
+  color: #FFD000; /* Yellow color from my style guide */
+}
+
+/* Change all other green text elements to yellow */
+.resume .text-green, .current {
+  color: #FFD000;
+}
+
+.resume .card h2 { 
+  font-size: 21px;
+}
+
+.resume .card h5 {
+  font-size: 18px; /* Adjust as needed */
+}
+
+/* Adjust font size for paragraph text in the resume page */
+.resume .card p {
+  font-size: 14px; /* Adjust as needed */
+}
+
+/* Adjust font size for the skills section */
+.skills p {
+  font-size: 17px; /* Adjust as needed */
+}
+
+.skills .progress-bar {
+  height: 20px; /* Adjust bar height if needed */
+  line-height: 20px; /* Ensure text inside is vertically centered */
+  font-size: 14px; /* Adjust as needed */
+}
+
+/* Adjust font size for the languages section */
+.languages p {
+  font-size: 16px; /* Adjust as needed */
+}
+
+.languages .progress-bar {
+  height: 20px; /* Adjust bar height if needed */
+  line-height: 20px; /* Ensure text inside is vertically centered */
+  font-size: 14px; /* Adjust as needed */
+}
+
+/* Adjust font size for the education section */
+.education-section h2 {
+  font-size: 24px; /* Adjust as needed */
+}
+
+.education-section h5 {
+  font-size: 16px; /* Adjust as needed */
+}
+
+.education-section p {
+  font-size: 14px; /* Adjust as needed */
+}
+
+/* Adjust font size for footer text */
+.footer p {
+  font-size: 16px; /* Adjust as needed */
+}
+
+/* Change all progress bar colors from green to yellow */
+.progress-bar {
+  background-color: #FFD000; 
+}
+
+/* Change green text elements (dates) and "Current" rectangle to yellow */
+.resume .text-green, .current {
+  color: #FFD000; 
+}
+
+.current {
+  background-color: #FFD000 !important; /* Yellow color for the "Current" rectangle */
+  color: white !important; /* Ensure text inside is readable */
+}
+
+/* Additional styles for Education section */
+.education-section {
+  padding: 20px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.education-section h2 {
+  font-family: 'Araboto Black', Arial, sans-serif;
+  color: #333333; /* Dark Gray */
+}
+
+.education-section .fa {
+  color: #FFD000; /* Yellow color for the icon */
+  margin-right: 10px;
+}
+
+/* Override W3.CSS progress bar colors */
+.w3-teal {
+  background-color: #FFD000 !important; /* Yellow color from your style guide */
+}
+
+/* Override W3.CSS dates and "Current" badge to yellow */
+.w3-text-green, .current {
+  color: #FFD000 !important; /* Yellow color for icons and text */
+}
+
+.current {
+  background-color: #FFD000 !important; /* Yellow background for "current" badge */
+  color: white !important; /* Ensure text inside "current" badge is readable */
+}
+
+/* Ensure icons in skills and languages section are yellow */
+.skills .fa, .languages .fa {
+  color: #FFD000 !important; /* Yellow color from your style guide */
+}
+
+/* Education section styles */
+.education-section h2 .fa {
+  color: #FFD000; /* Yellow color for the icon */
+  margin-right: 10px;
+}
+
+/* Override W3.CSS progress bar colors */
+.w3-teal {
+  background-color: #FFD000 !important; /* Yellow color from your style guide */
+}
+
+/* Override W3.CSS text color for dates and other elements */
+.w3-text-teal {
+  color: #FFD000 !important; /* Yellow color from your style guide */
+}
+
+/* Override W3.CSS dates and "Current" badge to yellow */
+.w3-text-green, .current {
+  color: #FFD000 !important; /* Yellow color for icons and text */
+}
+
+.current {
+  background-color: #FFD000 !important; /* Yellow background for "current" badge */
+  color: white !important; /* Ensure text inside "current" badge is readable */
+}
+
+/* Ensure icons in skills and languages section are yellow */
+.skills .fa, .languages .fa {
+  color: #FFD000 !important; /* Yellow color from your style guide */
+}
+
+/* Education section styles */
+.education-section h2 .fa {
+  color: #FFD000; /* Yellow color for the icon */
+  margin-right: 10px;
+}

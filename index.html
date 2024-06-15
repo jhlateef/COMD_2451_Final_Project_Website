@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JamilLateef.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jamil's portfolio showcasing my work and skills.">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/my-styles.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="index.html#my-work">My Work</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About Me</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </header>
+
+        <div class="w3-container welcome-section">
+            <img src="assets/ePort.png" alt="Profile Picture">
+            <h1>Hello! My name is Jamil Lateef.</h1>
+            <p>I'm a Graphic Designer. Welcome to my Portfolio.</p>
+        </div>
+
+        <!-- My Work Section -->
+        <div id="my-work" class="w3-container">
+            <h1 class="my-work-heading">My Work</h1>
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 9</div>
+                <img src="assets/Chwast_Poster_72dpi.jpg" alt="A poster for a fake Seymour Chwast design exhibit event." onclick="openModal('assets/Chwast_Poster_300dpi.jpg')">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 9</div>
+                <img src="assets/Froggy1_72dpi.jpg" alt="A graphite drawing of a frog in a rainforest along with a QR code" onclick="openModal('assets/Froggy1_300dpi.jpg')">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 9</div>
+                <img src="assets/Froggy2_72dpi.jpg" alt="Save The Wildlife poster with frog in the rainforest." onclick="openModal('assets/Froggy2_300dpi.jpg')">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 9</div>
+                <img src="assets/iPhone1_72dpi.jpg" alt="Top-right angle of iPhone 20 packaging design mockup." onclick="openModal('assets/iPhone1_300dpi.jpg')">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 9</div>
+                <img src="assets/iPhone2_72dpi.jpg" alt="Top-left angle of iPhone 20 packaging design mockup." onclick="openModal('assets/iPhone2_300dpi.jpg')">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 9</div>
+                <img src="assets/iPhone3_72dpi.jpg" alt="Birds-eye angle of iPhone 20 packaging design mockup." onclick="openModal('assets/iPhone3_300dpi.jpg')">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 9</div>
+                <img src="assets/iPhone4_72dpi.jpg" alt="Top-right close up of iPhone 20 packaging design mockup." onclick="openModal('assets/iPhone4_300dpi.jpg')">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 9</div>
+                <img src="assets/iPhone5_72dpi.jpg" alt="Front angle of iPhone 20 packaging design mockup." onclick="openModal('assets/iPhone5_300dpi.jpg')">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 9</div>
+                <img src="assets/Rough_Sketch1_72dpi.jpg" alt="Rough draft sketch of iphone 20 packaging mockup." onclick="openModal('assets/Rough_Sketch1_300dpi.jpg')">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span> 
+            <span class="dot" onclick="currentSlide(9)"></span> 
+        </div>
+
+        <!-- Modal structure -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage" src="assets/placeholder.jpg" alt="Large view of the selected artwork">
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Jamil Lateef. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Slideshow -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+        // Open the modal
+        function openModal(imageSrc) {
+            document.getElementById("myModal").style.display = "block";
+            document.getElementById("modalImage").src = imageSrc;
+        }
+
+        // Close the modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        // Automatic slideshow
+        let slideInterval = setInterval(() => {
+            plusSlides(1);
+        }, 5000); // Change image every 5 seconds
+    </script>
+    
+</body>
+</html>
